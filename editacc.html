@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- mobile metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+
+
+  <head>
+    <title>Edit Account</title>
+
+     <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous">
+    </script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="assets/css/styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg bg-white text-wrap fixed-top py-2" id="mainNav">
+      <div class="container-fluid">
+        <span class="navbar-text text-black" style="font-family:fantasy ">Lost and Found .Com</span>
+        <button class="navbar-toggler text-dark " type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <i class=" fas fa-lg fa-bars "></i>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarResponsive">
+          <ul class="nav navbar-nav ms-auto">
+            <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded " href="discover.html"> Discover Items</a></li>
+            <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded text-decoration-underline " href="reported-items.html">Reported Items</a></li>
+            <li class="nav-item mx-0 m-2 "> <a href="notifications.html" class="nav-link"><i class=" px-0  rounded  fas fa-lg fa-bell"></i></a></li>
+            <li class="nav-item dropdown mx-0 mx-lg-1">
+              <a href="#" class="nav-link py-3 px-0 px-lg-3 rounded  dropdown-toggle" data-bs-toggle="dropdown"><i class='px-0  rounded  fas fa-lg fa-user-circle'></i></a>
+              <div class="dropdown-menu dropdown-menu-end">
+                <div class="dropdown-divider"></div>
+                <h6 class="dropdown-header">
+                  <p>Name</p>
+                  <p>User-ID:</p>
+                  <p>E-Mail:</p>
+                  <a href="#" class="dropdown-item text-decoration-underline">Edit Account</a>
+                  <a href="#" class="dropdown-item">Delete Account</a>
+                  <div class="dropdown-divider"></div>
+                  <a href="#" class="dropdown-item">Logout</a>
+                </h6>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <br>
+    <!---Page heading--->
+    <div class="container m-5 py-5">
+      <h5 class=" m-auto  page-section-heading text-secondary ">Edit Account</h5>
+      <hr>
+      <!---form--->
+      <form>
+        <div class="m-5 m-lg-5 form-row container ">
+          <div class=" col-md-6"><input type="text" class="form-control" id="inputName" name="inputName" placeholder="Name" required>
+          </div><br>
+          <div class="col-md-6">
+            <input type="text" class="form-control" id="email" name="email" placeholder="Email" readonly>
+          </div><br>
+          <div class="col-md-6">
+            <input type="text" class="form-control" id="uid" name="uid" placeholder="Uid" readonly>
+          </div><br>
+          <center>
+            <button type="submit" class="btn btn-outline-primary">Update</button>
+            <button type="reset" class="btn btn-outline-danger">Clear All</button></center>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
